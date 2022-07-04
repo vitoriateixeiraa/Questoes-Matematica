@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Olá Mundo</title>
+</head>
+<body>
+   <h1>Calculando</h1>
+   <p>Digite o valor de a:</p>
+   <input id="valorA">
+   <p>Digite o valor de b:</p>
+   <input id="valorB">
+   <button onclick="calculo()">Calcular</button>
+   <p id="resultado"></p>
+</body>
+<script>
+   function calculo(){
+       let valorA = parseInt(document.getElementById("valorA").value);
+       let valorB = parseInt(document.getElementById("valorB").value);
+     
+       let calculoFuncao = (valorA*valorA) + (2*valorA*valorB) + (valorB*valorB) ;
+ 
+       document.getElementById("resultado").innerHTML = calculoFuncao;
+ 
+      }
+</script>
+</htm>
